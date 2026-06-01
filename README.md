@@ -5,3 +5,4 @@ to do :
 3. SMT alone
 
 
+SMT report: Find a part of formula that can already reach unsafety successfully
