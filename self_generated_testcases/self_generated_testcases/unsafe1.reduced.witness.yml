@@ -1,0 +1,27 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "d6aae27a-dd56-3f61-8aa0-d11857b7b8cb"
+    creation_time: "2026-05-20T18:49:46+08:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "predicateAnalysis"
+    task:
+      input_files:
+      - "storage/generated_unsafe.c"
+      input_file_hashes:
+        storage/generated_unsafe.c: "17bd8fbe9fa5fbccf4d9d56d00d09cad135e4ca970543bf41b9b30dfbdb299aa"
+      specification: ""
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "storage/generated_unsafe.c"
+          line: 6
+          column: 5
+          function: "reach_error"

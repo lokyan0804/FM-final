@@ -1,0 +1,207 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "bc2aa036-fea3-3228-b4a8-4e7d9a0e78df"
+    creation_time: "2026-05-20T19:27:25+08:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "predicateAnalysis"
+    task:
+      input_files:
+      - "./unsafe2.c"
+      input_file_hashes:
+        "./unsafe2.c": "0050693fcb7c14e7c75718bec1559299d3c01656d48cf90e839e01c5b98399d4"
+      specification: ""
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1747
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1754
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1761
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1768
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1775
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1782
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1789
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1796
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1803
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1810
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1817
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1824
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1831
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1838
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1845
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1852
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1859
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1866
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1873
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 1880
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "./unsafe2.c"
+          line: 8
+          column: 5
+          function: "reach_error"
