@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 19
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T12:45:51Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-invgen/id_trans.i: 6aaead44d7f76ddac498383f5d9663622bc4506781697c14d3a4988231066e32
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-invgen/id_trans.i
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 67c16d61-1a55-4208-8a0b-b3f348e34b57

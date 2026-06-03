@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loops/trex01-1.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T16:54:27Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loops/trex01-1.c: 17ed4d99148ac6ada38ac6bc04d827b0b0eab6c02993086c8fdb9ca9151ff08c
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loops/trex01-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 724b6bd7-96e4-41a2-8e93-d3eb6d2147bf

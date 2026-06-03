@@ -1,0 +1,365 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 9d9c80e4-e25c-443a-861c-fa87ee03cd14
+    creation_time: 2025-12-17T21:03:53Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c: 58e0ac80b52681cc0cdead13de3f6425618df79dffe8d2a1da55e71c89383d0a
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 26
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 27
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 29
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 13
+          column: 3
+          function: assume_abort_if_not
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 30
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 13
+          column: 3
+          function: assume_abort_if_not
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 32
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 33
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 50
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
+          line: 18
+          column: 10
+          function: __VERIFIER_assert
+        action: follow

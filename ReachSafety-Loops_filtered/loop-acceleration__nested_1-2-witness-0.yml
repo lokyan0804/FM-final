@@ -1,0 +1,25 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "f64ea39a-6a22-422a-8ee9-95a7f997f8e7"
+    creation_time: "2025-12-31T18:48:41+01:00"
+    producer:
+      name: "test-to-witness (original producer: PRTest v2.0)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loop-acceleration/nested_1-2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loop-acceleration/nested_1-2.c": "8828f6ff39cd2bcfba4fe3d04f0119d60137bcad91eabef2e2b840cbd0802b98"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loop-acceleration/nested_1-2.c"
+                   line: 7
+                   column: 13
+               type: "target"

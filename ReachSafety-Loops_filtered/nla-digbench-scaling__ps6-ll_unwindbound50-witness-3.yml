@@ -1,0 +1,1733 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "257cb481-3196-3ed0-b489-f7c4610f05cf"
+    creation_time: "2025-12-31T16:41:42+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-symbolicExecution"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c": "5bfe5681b6d73d5859a119345279b9da165675f4eb4d814fdf24f92881f7a27f"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 22
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 7
+          column: 3
+          function: "assume_abort_if_not"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c"
+          line: 12
+          column: 10
+          function: "__VERIFIER_assert"

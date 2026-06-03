@@ -1,0 +1,197 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: cec337a2-7834-4706-aed8-b3f3bd26341f
+    creation_time: 2025-12-18T02:44:55Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c: 723aed7c6af9907461d888a0eb388471854734314795d458b92dbfffd3df1c21
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 25
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 26
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 13
+          column: 3
+          function: assume_abort_if_not
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 27
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 28
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 13
+          column: 3
+          function: assume_abort_if_not
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 30
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 31
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 35
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 37
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 46
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 48
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_valuebound50.c
+          line: 18
+          column: 10
+          function: __VERIFIER_assert
+        action: follow

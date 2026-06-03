@@ -1,0 +1,281 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 5356115f-f2a1-4dc1-853a-dab6ac4d20e0
+    creation_time: 2025-12-17T21:25:29Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c: d8ee33f278cd93a3b1e0d551730c6407889b70e338ebc3c857541220d9b0f75f
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 25
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 26
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 27
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 28
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 34
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 34
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 34
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 34
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 34
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 34
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 35
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 47
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 48
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 49
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 14
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 16
+          column: 10
+          function: __VERIFIER_assert
+        action: follow

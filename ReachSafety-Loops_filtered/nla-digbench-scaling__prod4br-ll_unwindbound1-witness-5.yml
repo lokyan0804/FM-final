@@ -1,0 +1,150 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "5bfbad78-f827-3d55-bcee-dd60d25e59c5"
+    creation_time: "2025-12-31T19:05:16+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-symbolicExecution"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c": "7e9492584c051c945baa3a1de8b03a2c00614fb076a66c88b26b81461b005eeb"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 25
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 26
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 9
+          column: 3
+          function: "assume_abort_if_not"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 33
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 36
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 39
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 43
+          column: 16
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 46
+          column: 16
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 33
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c"
+          line: 14
+          column: 10
+          function: "__VERIFIER_assert"

@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 5
+        location:
+          column: 34
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound5.c
+          line: 26
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 10
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound5.c
+          line: 17
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T20:45:56Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound5.c: 173419c809fa8cb7fa094fdfc7b5765802a9a2fdebfe9d0a53cd745fd0c573d2
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound5.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 9aa8742f-8722-4143-bbf9-c2d701f586a4

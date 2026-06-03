@@ -1,0 +1,125 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: e91c4b5e-c76d-4f29-a5a7-035deb0cea7f
+    creation_time: 2025-12-18T03:03:48Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c: ce152ab821d49eb9acb39ce161d7ea2c6b8a3d3fa002051e62cb16783ef9575a
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 26
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 28
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 12
+          column: 3
+          function: assume_abort_if_not
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 34
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 35
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 36
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 61
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 15
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/lcm1_unwindbound100.c
+          line: 17
+          column: 10
+          function: __VERIFIER_assert
+        action: follow

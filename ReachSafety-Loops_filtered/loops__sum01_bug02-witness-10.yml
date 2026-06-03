@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 6
+        location:
+          column: 41
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 23
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 16
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T04:18:15Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/sum01_bug02.i: 29d100da65e2ae9d5c43d48b49216d155078158e341858baee0b08b697e15c8e
+      input_files:
+      - ../../sv-benchmarks/c/loops/sum01_bug02.i
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: c4fcf90f-2158-4b7a-932a-ac591177ef56

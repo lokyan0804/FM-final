@@ -1,0 +1,77 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 0cfb6998-e3f4-4bf3-9f84-a84d94375fda
+    creation_time: 2025-12-17T23:29:20Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/sum01_bug02.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/sum01_bug02.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/sum01_bug02.i: 29d100da65e2ae9d5c43d48b49216d155078158e341858baee0b08b697e15c8e
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 23
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 24
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 32
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 15
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum01_bug02.i
+          line: 16
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

@@ -1,0 +1,38 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "49c6ae29-2487-3ed6-a6f0-f5df95d50296"
+    creation_time: "2025-12-31T13:43:56+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--configselection-restartcomponent-predicateAnalysis-end"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/while_infinite_loop_4.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/while_infinite_loop_4.c": "4e1af5f99f69a9274241fcc833ef9ca578ac40199221caab0e395b3d77967510"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/while_infinite_loop_4.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/while_infinite_loop_4.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

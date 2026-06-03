@@ -1,0 +1,721 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "c6858d32-948f-37f3-a7c7-bdf1bd08a4ba"
+    creation_time: "2025-12-31T19:54:34+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-symbolicExecution"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c": "99e5cccea54789cc7c8b01ece41ae38ca7afc8c38f73e2884988b8ff4c6bfc25"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 23
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 30
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 27
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 10
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c"
+          line: 12
+          column: 10
+          function: "__VERIFIER_assert"

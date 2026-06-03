@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 21
+        location:
+          column: 33
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c
+          line: 21
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 10
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c
+          line: 12
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T05:00:57Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c: 99e5cccea54789cc7c8b01ece41ae38ca7afc8c38f73e2884988b8ff4c6bfc25
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 581511fc-9b83-44dd-940f-8e3aad2b7a43

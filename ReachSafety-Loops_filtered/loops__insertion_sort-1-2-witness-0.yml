@@ -1,0 +1,292 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "e29e21e7-4021-3848-b077-34f8628129cd"
+    creation_time: "2025-12-11T17:36:07+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/insertion_sort-1-2.c": "36d1103e69366c6d9110aa7e24b0c4765120510facc121d7623fcf9373a67e96"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(SIZE == 4U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 15
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 15
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 20
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 20
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 20
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 20
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 20
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 22
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 25
+          column: 7
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 22
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 25
+          column: 7
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 22
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 25
+          column: 7
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 26
+          column: 10
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 25
+          column: 7
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 26
+          column: 10
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 25
+          column: 7
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 22
+          column: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 32
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 32
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 32
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/insertion_sort-1-2.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

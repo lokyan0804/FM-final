@@ -1,0 +1,72 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "45d8341a-636e-3a16-a390-c625a12bae26"
+    creation_time: "2025-12-11T17:02:54+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c": "40774f15dea268138f2179cc2f832c9729515e75ef9c65e50e7b347c749bb02c"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(x == 1U) && (y == 1U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c"
+          line: 21
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c"
+          line: 21
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c"
+          line: 23
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c"
+          line: 11
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/phases_2-1.c"
+          line: 12
+          column: 13
+          function: "__VERIFIER_assert"

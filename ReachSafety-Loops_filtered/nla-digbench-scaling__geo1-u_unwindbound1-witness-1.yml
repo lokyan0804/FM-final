@@ -1,0 +1,47 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 32
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound1.c
+          line: 26
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 32
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound1.c
+          line: 27
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 10
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound1.c
+          line: 18
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T14:04:41Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound1.c: c65a53f1313db24c68393791b4908f8b7d714a999304543d6f24b17afe648af4
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: be722d29-7de2-4e67-9e90-66951603c3c7

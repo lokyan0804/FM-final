@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "e990b5dd-f1d2-4b66-9abd-3e76bd24242e"
+    creation_time: "2025-12-12T12:57:13Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i": "dedd0e691082a54e7ab91bc5c89cd5119d7051d93eccccd50f69369896fe2c2c"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 16
+          column: 13
+          function: "__VERIFIER_assert"

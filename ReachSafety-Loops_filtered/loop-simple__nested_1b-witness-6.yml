@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 3
+          file_name: /home/cwd/sv-benchmarks/c/loop-simple/nested_1b.c
+          line: 23
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T11:16:59Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-simple/nested_1b.c: de4c7bf005639409d0c5506b91694c0a93e2905c64b2cd28aafb6e9617d859e5
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-simple/nested_1b.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 35aaaf74-3ef6-4fba-b89f-33b208259e4c

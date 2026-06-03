@@ -1,0 +1,259 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "b5531c38-a813-31c3-9507-c3525de2bd23"
+    creation_time: "2025-12-11T16:28:59+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c": "eb7e704db84b45f8c7f1cb386fc610e1107f57c6e67c0a3b2af510d7426cfd4f"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(counter == 0)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 24
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 9
+          column: 3
+          function: "assume_abort_if_not"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 30
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 30
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 30
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 30
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 31
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 38
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 46
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 52
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 38
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 12
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound5.c"
+          line: 14
+          column: 10
+          function: "__VERIFIER_assert"

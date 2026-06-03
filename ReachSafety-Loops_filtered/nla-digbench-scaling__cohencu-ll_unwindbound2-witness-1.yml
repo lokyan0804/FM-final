@@ -1,0 +1,36 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: '2.1'
+    creation_time: '2025-12-17T22:21:11Z'
+    producer:
+      name: witch
+      version: 4.0.0-rc1
+    uuid: 03882f14-4131-4fb6-bd03-770fc964a505
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound2.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound2.c: f50c7bc2857aa84cb02200a831151d15e1603828dabc8b6cfed5e5d60ae2ee71
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+      data_model: ILP32
+      language: C
+  content:
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 1024
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound2.c
+          line: 26
+          column: 34
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound2.c
+          line: 17
+          column: 10

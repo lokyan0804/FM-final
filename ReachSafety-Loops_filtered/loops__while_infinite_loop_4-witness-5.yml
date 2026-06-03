@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "b3e9684d-9470-47dc-b54d-0a5979ab7f3a"
+    creation_time: "2025-12-12T18:07:20Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/while_infinite_loop_4.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/while_infinite_loop_4.c": "4e1af5f99f69a9274241fcc833ef9ca578ac40199221caab0e395b3d77967510"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/while_infinite_loop_4.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

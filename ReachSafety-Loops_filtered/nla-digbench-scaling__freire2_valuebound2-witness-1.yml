@@ -1,0 +1,83 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "02381c26-fbb7-3371-869b-90111fc88df1"
+    creation_time: "2025-12-11T17:28:19+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c": "d2d6f9be66d27a1c9d3b3eaba0ccd86a9e6d263d5b40883199c2e280efc7ebbe"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(a == 1.7034289172982109e-17)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+          line: 28
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+          line: 14
+          column: 3
+          function: "assume_abort_if_not"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+          line: 17
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+          line: 17
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+          line: 17
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c"
+          line: 19
+          column: 10
+          function: "__VERIFIER_assert"

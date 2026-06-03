@@ -1,0 +1,118 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "d7f99495-7569-3a6c-bbed-72b91b058074"
+    creation_time: "2025-12-31T18:22:58+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-IMC"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c": "563b7b68cc9c71f6c32d6693c1b275445975396b9300286e8e67b320f2f5679b"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(n == 2U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 13
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 13
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 19
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(v == 224U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 21
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 19
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(v == 63U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 21
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 19
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 24
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c"
+          line: 25
+          column: 5
+          function: "main"

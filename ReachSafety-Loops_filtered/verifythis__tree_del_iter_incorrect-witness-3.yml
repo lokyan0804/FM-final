@@ -1,0 +1,204 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "2fa8793b-bef9-3286-bd2b-54588486444e"
+    creation_time: "2025-12-11T19:19:13+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c": "ea9176e8f05d12353cfce4e25b1c07d4ae455b071f532cf613214200ca8ea885"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 32
+          column: 5
+          function: "nondet_tree"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 37
+          column: 9
+          function: "nondet_tree"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 32
+          column: 5
+          function: "nondet_tree"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 32
+          column: 5
+          function: "nondet_tree"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 44
+          column: 5
+          function: "min"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 44
+          column: 5
+          function: "min"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 44
+          column: 5
+          function: "min"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 49
+          column: 9
+          function: "min"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 85
+          column: 5
+          function: "size"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 85
+          column: 5
+          function: "size"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 85
+          column: 5
+          function: "size"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 17
+          column: 3
+          function: "assume_abort_if_not"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 74
+          column: 5
+          function: "tree_inorder"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 74
+          column: 5
+          function: "tree_inorder"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 74
+          column: 5
+          function: "tree_inorder"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 23
+          column: 5
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/verifythis/tree_del_iter_incorrect.c"
+          line: 23
+          column: 16
+          function: "__VERIFIER_assert"

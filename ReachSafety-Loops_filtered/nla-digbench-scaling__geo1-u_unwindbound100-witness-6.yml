@@ -1,0 +1,149 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: a02b0aa2-f129-4cdd-8187-63a6f02a7efe
+    creation_time: 2025-12-17T21:16:03Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c: 56c4e94c28ef21b810dfd9735c6a4e78cb913b54bdade350dd23877b35f6607b
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 26
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 27
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 29
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 30
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 34
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 36
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 45
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 47
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 16
+          column: 5
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/geo1-u_unwindbound100.c
+          line: 18
+          column: 10
+          function: __VERIFIER_assert
+        action: follow

@@ -1,0 +1,125 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 2b480327-b833-4078-bf1e-2090c74f6aa2
+    creation_time: 2025-12-17T23:13:57Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c: 87474cec71c0146c8deced67d68861d5f25c58045bbea0d7c49a7bc27df227ea
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 23
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 26
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 28
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 30
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 32
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 33
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 37
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 16
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+          line: 17
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

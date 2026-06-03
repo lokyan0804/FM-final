@@ -1,0 +1,214 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "4544e8f4-3f71-3afe-9cf8-5d0c28058559"
+    creation_time: "2025-12-31T17:15:30+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--configselection-restartcomponent-valueAnalysis-itp-end"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i": "c1599706a72281425c0fc51552af364ca390697b315c5af0e88e5d6de4e668c6"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 87
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 62
+          column: 3
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 63
+          column: 3
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 63
+          column: 3
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 67
+          column: 7
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 68
+          column: 7
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 70
+          column: 7
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 71
+          column: 7
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 72
+          column: 7
+          function: "parse_expression_list"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 15
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_OpenSER_cases1_stripFullBoth_arr.i"
+          line: 16
+          column: 13
+          function: "__VERIFIER_assert"

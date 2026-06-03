@@ -1,0 +1,83 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "c1cd1afe-d41e-3504-bcff-6ff740ba5d76"
+    creation_time: "2025-12-31T16:18:37+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--multipleLoops-kInduction"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/array-2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/array-2.c": "8df294a242896c5bf5c0de59a6565bdcc2051c441282e921edcd2c4fccba4c24"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/array-2.c"
+          line: 21
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "((array[j]) == 0)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/array-2.c"
+          line: 24
+          column: 8
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/array-2.c"
+          line: 24
+          column: 8
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/array-2.c"
+          line: 21
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/array-2.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/array-2.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

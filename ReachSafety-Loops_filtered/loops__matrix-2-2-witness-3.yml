@@ -1,0 +1,113 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 71d471f1-42ec-4764-b767-0d6488cc8870
+    creation_time: 2025-12-18T00:02:42Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/matrix-2-2.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/matrix-2-2.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/matrix-2-2.c: 29c60028fe77c919c85938e022adc26e4c09a5802df35e9dae1aea434a543980
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 16
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 17
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 18
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 22
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 24
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 36
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 6
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/matrix-2-2.c
+          line: 7
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

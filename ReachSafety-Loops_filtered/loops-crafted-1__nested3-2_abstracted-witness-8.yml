@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c
+          line: 17
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T19:21:06Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c: d76e796105c1d35b11eef95fec820f9bea85a1e845abd1567e15743f74522bc9
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: e023f151-4fbe-4b5f-971f-d30ab02aeb32

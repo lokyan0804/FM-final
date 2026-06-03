@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loops/sum01_bug02.i
+          line: 16
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T17:04:02Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loops/sum01_bug02.i: 29d100da65e2ae9d5c43d48b49216d155078158e341858baee0b08b697e15c8e
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loops/sum01_bug02.i
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: f051a9e9-1245-42aa-b530-fc51db88a358

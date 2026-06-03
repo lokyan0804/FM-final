@@ -1,0 +1,25 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "a76f4df2-094f-47ae-98f3-c79aff644cd4"
+    creation_time: "2025-12-31T16:45:20+01:00"
+    producer:
+      name: "test-to-witness (original producer: PRTest v2.0)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loop-acceleration/phases_1-2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loop-acceleration/phases_1-2.c": "4f868671c12bae02e06798527bc7c1ed7b8332d3fee83b3ff24f9cd503da0a60"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loop-acceleration/phases_1-2.c"
+                   line: 7
+                   column: 13
+               type: "target"

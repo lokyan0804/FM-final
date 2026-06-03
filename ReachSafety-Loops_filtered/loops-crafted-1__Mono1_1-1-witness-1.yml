@@ -1,0 +1,53 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 05947ee9-a3a4-4973-9bdd-6c7939cc9ebb
+    creation_time: 2025-12-18T02:58:04Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c: 73587fb730a0fae8f0f61c4bce66b3ef3eca8012a1c96e30e457f1e4f757a73f
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c
+          line: 16
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c
+          line: 4
+          column: 36
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c
+          line: 4
+          column: 58
+          function: __VERIFIER_assert
+        action: follow

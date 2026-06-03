@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loop-acceleration/multivar_1-2.c
+          line: 8
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T16:25:13Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-acceleration/multivar_1-2.c: cba7dca6ff66778f2b0713799020489351e0894eee3f1f22efefe84bd1d673ea
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-acceleration/multivar_1-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 15c1975c-87f5-4220-b4b6-fc438881ba05

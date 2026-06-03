@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T20:54:33Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/while_infinite_loop_4.c: 4e1af5f99f69a9274241fcc833ef9ca578ac40199221caab0e395b3d77967510
+      input_files:
+      - ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 41eb5ab6-c9a5-4480-a6b3-7ba20f0004c4

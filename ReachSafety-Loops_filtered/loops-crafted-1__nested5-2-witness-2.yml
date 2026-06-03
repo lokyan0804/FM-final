@@ -1,0 +1,25 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "801f0f12-a55d-42d4-8146-1769a072e09b"
+    creation_time: "2025-12-31T18:40:05+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loops-crafted-1/nested5-2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loops-crafted-1/nested5-2.c": "5ad780effdbe313ff13ad5bc7233d50356fbf06f53a57c18cd85a4aa46126eb2"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops-crafted-1/nested5-2.c"
+                   line: 7
+                   column: 13
+               type: "target"

@@ -1,0 +1,47 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "9df98194-8876-4835-87bc-0cf875248cb6"
+    creation_time: "2025-12-31T19:40:21+01:00"
+    producer:
+      name: "test-to-witness (original producer: PRTest v2.0)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound5.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound5.c": "77987d39218daa3d8ca19fe9337f6493b276d704fa95c2d6fb7800ec30efdcea"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound5.c"
+                   line: 22
+                   column: 31
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 1741056371"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound5.c"
+                   line: 23
+                   column: 31
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 1375685356"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound5.c"
+                   line: 13
+                   column: 10
+               type: "target"

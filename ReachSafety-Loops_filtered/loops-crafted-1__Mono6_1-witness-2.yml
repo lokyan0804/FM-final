@@ -1,0 +1,77 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 59d71b8b-a88c-41e5-a40e-f01efdd1f0d5
+    creation_time: 2025-12-17T22:18:22Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c: d34109ac38ddcd69eb693c43509c1355293ac88c80ebd192d8e2af9a8be8f805
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
+          line: 7
+          column: 1
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
+          line: 8
+          column: 1
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
+          line: 15
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
+          line: 4
+          column: 36
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
+          line: 4
+          column: 58
+          function: __VERIFIER_assert
+        action: follow

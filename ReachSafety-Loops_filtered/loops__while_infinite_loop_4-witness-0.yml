@@ -1,0 +1,77 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 98daf814-cd95-49b9-b672-2ab3e8e6d545
+    creation_time: 2025-12-17T21:08:08Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/while_infinite_loop_4.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/while_infinite_loop_4.c: 4e1af5f99f69a9274241fcc833ef9ca578ac40199221caab0e395b3d77967510
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+          line: 28
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+          line: 17
+          column: 7
+          function: eval
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+          line: 29
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+          line: 6
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/while_infinite_loop_4.c
+          line: 7
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

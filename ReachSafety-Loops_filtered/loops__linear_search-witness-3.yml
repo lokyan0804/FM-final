@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 78
+        location:
+          column: 32
+          file_name: ../../sv-benchmarks/c/loops/linear_search.c
+          line: 25
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/linear_search.c
+          line: 8
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T15:10:27Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/linear_search.c: 5daf86ff8189a9471a20a947a9c78ff63bc56ed2dde2c379166a5ef7ff47fae4
+      input_files:
+      - ../../sv-benchmarks/c/loops/linear_search.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: e0ca8305-b534-472d-9ff2-b09b4991e2c7

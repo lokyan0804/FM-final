@@ -1,0 +1,49 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "dd52a750-0dda-328c-9b8a-812e15fc1ef6"
+    creation_time: "2025-12-31T17:55:18+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-valueAnalysis-Cegar"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loop-acceleration/simple_3-1.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loop-acceleration/simple_3-1.c": "f4f78d6adc1fe4ae02b4ca0ac1f0580fb6d17885a4734f4ab50570fc9f8ba024"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/simple_3-1.c"
+          line: 17
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/simple_3-1.c"
+          line: 7
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/simple_3-1.c"
+          line: 8
+          column: 13
+          function: "__VERIFIER_assert"

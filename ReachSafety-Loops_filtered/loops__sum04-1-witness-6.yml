@@ -1,0 +1,65 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 933a93d4-ea90-40bb-9d6d-2149025e91cf
+    creation_time: 2025-12-17T23:23:40Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/sum04-1.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/sum04-1.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/sum04-1.i: 363837b614bad810335bbe0c369ca77c24cc87938da6245b414371c201391312
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum04-1.i
+          line: 23
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum04-1.i
+          line: 28
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum04-1.i
+          line: 15
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/sum04-1.i
+          line: 16
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

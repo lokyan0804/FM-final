@@ -1,0 +1,47 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "854ba0c6-fac5-4ba9-8d8f-44f1c6320998"
+    creation_time: "2025-12-31T19:23:05+01:00"
+    producer:
+      name: "test-to-witness (original producer: PRTest v2.0)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound10.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound10.c": "4030584521f36b8dc597e2fe097d1241b197ec784cb344ca35f6903bd5f84f17"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound10.c"
+                   line: 23
+                   column: 31
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 1738764827"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound10.c"
+                   line: 24
+                   column: 31
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == -37888"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound10.c"
+                   line: 14
+                   column: 10
+               type: "target"

@@ -1,0 +1,36 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "6f939ef4-7f16-4617-b94b-d799efd505be"
+    creation_time: "2025-12-31T19:06:59+01:00"
+    producer:
+      name: "test-to-witness (original producer: PRTest v2.0)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound100.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound100.c": "c55d57654781cf0634666e1c7d4e43dff0d9410f4306aded3e4e446e1f9e88d1"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound100.c"
+                   line: 26
+                   column: 34
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 26566"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/cohencu-ll_unwindbound100.c"
+                   line: 17
+                   column: 10
+               type: "target"

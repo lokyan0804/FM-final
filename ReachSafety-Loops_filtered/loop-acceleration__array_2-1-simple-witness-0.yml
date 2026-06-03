@@ -1,0 +1,25 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "9e32043f-b14d-46b7-aa7b-528f2e9b7580"
+    creation_time: "2025-12-31T21:15:04+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i": "ef2ac183abfa5be888591001d2f7376a659c701d3e7fb64cad1cba56a829d8b3"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i"
+                   line: 15
+                   column: 13
+               type: "target"

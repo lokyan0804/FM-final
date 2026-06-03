@@ -1,0 +1,36 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "26fc381a-71c2-471d-9301-e7cfadaacd5d"
+    creation_time: "2025-12-31T17:51:14+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound1.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound1.c": "ff5daa36c47d3acf04ff127d3f9a6e17688f7f254f16d34cb2769aec1ca052fe"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound1.c"
+                   line: 27
+                   column: 34
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0.000020"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound1.c"
+                   line: 19
+                   column: 10
+               type: "target"

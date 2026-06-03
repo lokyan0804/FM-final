@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 16
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T11:53:13Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i: dedd0e691082a54e7ab91bc5c89cd5119d7051d93eccccd50f69369896fe2c2c
+      input_files:
+      - ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: e19ff556-0c81-40c8-b78a-dc949e20de8e

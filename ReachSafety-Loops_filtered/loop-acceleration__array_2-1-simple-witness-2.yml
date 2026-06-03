@@ -1,0 +1,77 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: c557e1d2-0249-467f-87b2-a7e684beb0ad
+    creation_time: 2025-12-17T21:36:30Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i: ef2ac183abfa5be888591001d2f7376a659c701d3e7fb64cad1cba56a829d8b3
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i
+          line: 20
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i
+          line: 21
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i
+          line: 28
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i
+          line: 14
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1-simple.i
+          line: 15
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

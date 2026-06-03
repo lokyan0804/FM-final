@@ -1,0 +1,125 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 8da8e4b4-7bf2-43cb-807f-0281cab9a6aa
+    creation_time: 2025-12-17T23:02:49Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loop-invgen/id_trans.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loop-invgen/id_trans.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-invgen/id_trans.i: 6aaead44d7f76ddac498383f5d9663622bc4506781697c14d3a4988231066e32
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 27
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 30
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 32
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 18
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 34
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 18
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 35
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 18
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loop-invgen/id_trans.i
+          line: 19
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

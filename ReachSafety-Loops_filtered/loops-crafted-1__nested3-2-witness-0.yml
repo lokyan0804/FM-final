@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "0e3323f2-3143-48b3-9391-9ebd1b8844d3"
+    creation_time: "2025-12-12T18:07:18Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops-crafted-1/nested3-2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops-crafted-1/nested3-2.c": "0397e1839c0d761fe403b06501425acc9e7bddc9f103e53ae177509d148aabf4"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops-crafted-1/nested3-2.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

@@ -1,0 +1,61 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "daeeaaf4-f9bd-3ddd-b9fa-63dad7ba72fc"
+    creation_time: "2025-12-11T17:46:02+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/count_up_down-2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/count_up_down-2.c": "39220193a6f0ba3a591d213916c0080f2ed370d08893716849d141f50c2ee13d"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(n == 0U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/count_up_down-2.c"
+          line: 16
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/count_up_down-2.c"
+          line: 17
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/count_up_down-2.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/count_up_down-2.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

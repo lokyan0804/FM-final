@@ -1,0 +1,25 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "18f12988-26ad-4654-b155-dd059cf8b8ce"
+    creation_time: "2025-12-31T13:46:08+01:00"
+    producer:
+      name: "test-to-witness (original producer: PRTest v2.0)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loops-crafted-1/Mono5_1.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loops-crafted-1/Mono5_1.c": "0d27ce9425b362883f32c5ccf3973d31d4f8100e5e6b8fcc1a4527c07eb2b71c"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops-crafted-1/Mono5_1.c"
+                   line: 4
+                   column: 58
+               type: "target"

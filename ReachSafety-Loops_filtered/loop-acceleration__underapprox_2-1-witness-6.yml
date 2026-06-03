@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loop-acceleration/underapprox_2-1.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T15:17:48Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-acceleration/underapprox_2-1.c: dc138f274319e5e58145eabf3fb84043b6d1bd3c616751e51efeb5e2ee2997a6
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-acceleration/underapprox_2-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 5ac97b42-90e1-4f33-b9ed-fed6cb5b5364

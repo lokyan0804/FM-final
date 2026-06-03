@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == -2147483648
+        location:
+          column: 27
+          file_name: ../../sv-benchmarks/c/loops/trex02-2.c
+          line: 22
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/trex02-2.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T02:36:54Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/trex02-2.c: 813a8ddd546bc7f5130f32994d5f684af23ea3f2882f066aeb97d0e96f57ab55
+      input_files:
+      - ../../sv-benchmarks/c/loops/trex02-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: a1831ea9-a038-4247-8375-63808cb00a28

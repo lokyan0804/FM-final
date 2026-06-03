@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 822083584
+        location:
+          column: 32
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound20.c
+          line: 23
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 10
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound20.c
+          line: 14
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T02:51:18Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound20.c: 49a20f83cf329df91226e628147ac8e7ab93deb8d5efcb58cae512b640c9b509
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound20.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 1e15e6e0-49f9-4ddb-bb63-77c73cd5c776

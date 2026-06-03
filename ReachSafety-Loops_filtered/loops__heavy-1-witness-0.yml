@@ -1,0 +1,53 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: b65147e0-592e-44a2-9269-33fbbb7d27b4
+    creation_time: 2025-12-17T21:30:11Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/heavy-1.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/heavy-1.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/heavy-1.c: 544ff1a31d34f1c818140bb31fb5c7091aef904c3b9f7e17a0cc8560e99eb61a
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/heavy-1.c
+          line: 10
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/heavy-1.c
+          line: 17
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/heavy-1.c
+          line: 21
+          column: 9
+          function: main
+        action: follow

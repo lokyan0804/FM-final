@@ -1,0 +1,83 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: '2.0'
+    uuid: e4b0d3be-3c2f-4938-802b-3dd977c684d5
+    creation_time: '2025-12-22T23:46:22+01:00'
+    producer:
+      name: Automizer
+      version: 0.3.0-merge.mb.parallel-trace-abstraction-826e9f3-m
+    task:
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c: 563b7b68cc9c71f6c32d6693c1b275445975396b9300286e8e67b320f2f5679b
+      specification: |+
+        CHECK( init(main()), LTL(G ! call(reach_error())) )
+
+      data_model: ILP32
+      language: C
+  content:
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 13
+          column: 3
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 19
+          column: 3
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 19
+          column: 3
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 19
+          column: 3
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 24
+          column: 3
+          function: main
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 25
+          column: 5
+          function: main

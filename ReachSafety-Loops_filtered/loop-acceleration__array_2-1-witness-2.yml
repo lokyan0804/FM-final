@@ -1,0 +1,65 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 479156da-ec23-4658-aa51-f971606e8a27
+    creation_time: 2025-12-17T20:55:23Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loop-acceleration/array_2-1.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/array_2-1.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/array_2-1.i: d1726b0c52a0be10cb8b374bfde8cdbfe3513d4b934203f7e56a3a1bce5e9e5b
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1.i
+          line: 26
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1.i
+          line: 33
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1.i
+          line: 15
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_2-1.i
+          line: 16
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

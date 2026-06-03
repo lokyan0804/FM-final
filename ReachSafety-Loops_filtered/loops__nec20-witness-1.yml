@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "64e14956-e28d-464c-bee7-fd31b36195a2"
+    creation_time: "2025-12-12T09:33:37Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/nec20.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/nec20.c": "f0c1b7bb29025bb3cfe44532e03db36f6e9424224df9a32b2b480eba846c2cfe"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/nec20.c"
+          line: 8
+          column: 13
+          function: "__VERIFIER_assert"

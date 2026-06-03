@@ -1,0 +1,41 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 2eff1d7b-1117-4f65-a621-95507c50ff52
+    creation_time: 2025-12-18T01:04:54Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loop-simple/deep-nested.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loop-simple/deep-nested.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-simple/deep-nested.c: f4fa4f6a03e1cc5362361e8e2a443a39504511936859bef102e6d3337f038be8
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-simple/deep-nested.c
+          line: 15
+          column: 2
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loop-simple/deep-nested.c
+          line: 23
+          column: 9
+          function: main
+        action: follow

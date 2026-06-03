@@ -1,0 +1,47 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 33
+          file_name: ../../sv-benchmarks/c/loops/array-2.c
+          line: 19
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 41
+          file_name: ../../sv-benchmarks/c/loops/array-2.c
+          line: 22
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/array-2.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T12:08:48Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/array-2.c: 8df294a242896c5bf5c0de59a6565bdcc2051c441282e921edcd2c4fccba4c24
+      input_files:
+      - ../../sv-benchmarks/c/loops/array-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: d990538e-b7ea-46d4-bb9f-5ec35a62b03a

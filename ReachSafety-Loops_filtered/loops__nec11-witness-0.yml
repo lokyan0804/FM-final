@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 35
+          file_name: ../../sv-benchmarks/c/loops/nec11.c
+          line: 17
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/nec11.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T23:03:26Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/nec11.c: b78564a93d1d434db2fa377a9b33de67cda5b233a427ae8d3550b20661e154a3
+      input_files:
+      - ../../sv-benchmarks/c/loops/nec11.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 8eebe941-ec32-43da-9f79-07e9e4b148b9

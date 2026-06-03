@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "4830eea4-a816-43ea-a1a5-74a7219b39b4"
+    creation_time: "2025-12-12T12:19:33Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loop-acceleration/underapprox_1-1.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loop-acceleration/underapprox_1-1.c": "11d6d848444c2f9afc2eba3aace7d6b72c4d182e1953661ba8811794c092f478"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/underapprox_1-1.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

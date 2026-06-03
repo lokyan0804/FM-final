@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loop-acceleration/array_1-1.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T21:18:43Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/array_1-1.c: ae9ddd4d1a773404c3b608e065785029116017ed4a7aa9eefa9f9dc9ab8104a6
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/array_1-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: c6482e73-e3a1-41f3-b461-ce58961fd602

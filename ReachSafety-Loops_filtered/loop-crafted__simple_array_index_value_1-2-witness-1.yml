@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 10000
+        location:
+          column: 36
+          file_name: ../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i
+          line: 40
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i
+          line: 26
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T20:17:50Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i: d092867a9e1055748d4525b336ea1f27e78b14112d4f5a890867dcf4a9fe862b
+      input_files:
+      - ../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 24c1074c-acfd-4a8a-a76d-b04e80cd1390

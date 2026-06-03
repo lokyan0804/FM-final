@@ -1,0 +1,93 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "44023e89-3ce7-33f6-a61d-15f5d80b1b13"
+    creation_time: "2025-12-11T14:07:27+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.2"
+      configuration: "svcomp26"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i": "dedd0e691082a54e7ab91bc5c89cd5119d7051d93eccccd50f69369896fe2c2c"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 29
+          column: 3
+          function: "glob2"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 15
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 29
+          column: 3
+          function: "glob2"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 15
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 29
+          column: 3
+          function: "glob2"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 15
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i"
+          line: 16
+          column: 13
+          function: "__VERIFIER_assert"

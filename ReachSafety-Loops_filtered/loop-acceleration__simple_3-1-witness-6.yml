@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 47
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_3-1.c
+          line: 15
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_3-1.c
+          line: 8
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T18:23:02Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/simple_3-1.c: f4f78d6adc1fe4ae02b4ca0ac1f0580fb6d17885a4734f4ab50570fc9f8ba024
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/simple_3-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 20537e41-5d86-4f30-84df-d0a6b25329ff

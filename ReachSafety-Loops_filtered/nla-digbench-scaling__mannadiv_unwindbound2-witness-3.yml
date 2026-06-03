@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "35ab4899-133f-4573-b123-f785afd045ad"
+    creation_time: "2025-12-12T07:32:05Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound2.c": "f9a59972454f7ae078581bb1592875955e31a3bd05f52cbebd7b164f55fa53bc"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound2.c"
+          line: 18
+          column: 10
+          function: "__VERIFIER_assert"

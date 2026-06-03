@@ -1,0 +1,69 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "5cdb96e5-dc12-497a-83cd-f60ecba9d801"
+    creation_time: "2025-12-31T16:41:31+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loops/matrix-2-2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loops/matrix-2-2.c": "29c60028fe77c919c85938e022adc26e4c09a5802df35e9dae1aea434a543980"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/matrix-2-2.c"
+                   line: 16
+                   column: 45
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 1"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/matrix-2-2.c"
+                   line: 17
+                   column: 45
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 1"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/matrix-2-2.c"
+                   line: 24
+                   column: 33
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/matrix-2-2.c"
+                   line: 28
+                   column: 45
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/matrix-2-2.c"
+                   line: 7
+                   column: 13
+               type: "target"

@@ -1,0 +1,61 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "0fa23554-5191-3b19-9520-62bd9726db52"
+    creation_time: "2025-12-31T17:19:32+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-IMC"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c": "cba7dca6ff66778f2b0713799020489351e0894eee3f1f22efefe84bd1d673ea"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(x == 2048U)"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c"
+          line: 15
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c"
+          line: 17
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c"
+          line: 7
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c"
+          line: 8
+          column: 13
+          function: "__VERIFIER_assert"

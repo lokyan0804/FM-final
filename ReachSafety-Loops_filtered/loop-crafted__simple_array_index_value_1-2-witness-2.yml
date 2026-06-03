@@ -1,0 +1,61 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "377d1e27-cec8-385b-ac9b-33c30da61c98"
+    creation_time: "2025-12-31T20:01:28+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--configselection-restartcomponent-valueAnalysis-itp-end"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i": "d092867a9e1055748d4525b336ea1f27e78b14112d4f5a890867dcf4a9fe862b"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i"
+          line: 41
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i"
+          line: 41
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i"
+          line: 25
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-2.i"
+          line: 26
+          column: 13
+          function: "__VERIFIER_assert"

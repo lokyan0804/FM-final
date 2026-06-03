@@ -1,0 +1,26 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "45bc1849-0828-4199-bd52-8edae332dbfe"
+    creation_time: "2025-12-12T08:54:38Z"
+    producer:
+      name: "Mopsa"
+      version: "1.2"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound10.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound10.c": "9f971bd1a6fba471cdece6d295ca31488341eb806ea8364f7549d05755c7a031"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound10.c"
+          line: 17
+          column: 10
+          function: "__VERIFIER_assert"

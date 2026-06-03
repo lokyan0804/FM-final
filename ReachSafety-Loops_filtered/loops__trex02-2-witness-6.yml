@@ -1,0 +1,49 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "f9b78ecf-7396-3798-8625-7b1b41556f73"
+    creation_time: "2025-12-31T18:05:24+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--singleLoop-symbolicExecution"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops/trex02-2.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops/trex02-2.c": "813a8ddd546bc7f5130f32994d5f684af23ea3f2882f066aeb97d0e96f57ab55"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/trex02-2.c"
+          line: 23
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/trex02-2.c"
+          line: 6
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops/trex02-2.c"
+          line: 7
+          column: 13
+          function: "__VERIFIER_assert"

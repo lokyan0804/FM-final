@@ -1,0 +1,36 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "8ddabfa1-71df-49fc-8418-c514698c5b9a"
+    creation_time: "2025-12-31T17:06:32+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loops-crafted-1/nested_delay_notd2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loops-crafted-1/nested_delay_notd2.c": "a8791b6973aa1a0d5421161a634fa2e6c3276aa5fd05ed6d81de7a2762aa206a"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops-crafted-1/nested_delay_notd2.c"
+                   line: 20
+                   column: 31
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 512"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops-crafted-1/nested_delay_notd2.c"
+                   line: 12
+                   column: 14
+               type: "target"

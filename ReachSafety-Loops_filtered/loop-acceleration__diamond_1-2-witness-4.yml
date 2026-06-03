@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loop-acceleration/diamond_1-2.c
+          line: 8
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T18:16:50Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-acceleration/diamond_1-2.c: 278330930f6296a6ef523f9a21bb3281878247b5e50b78eb9077d2b7690716c4
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-acceleration/diamond_1-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 92ff2f4a-1f30-4e96-9bef-bb03cecd15a2

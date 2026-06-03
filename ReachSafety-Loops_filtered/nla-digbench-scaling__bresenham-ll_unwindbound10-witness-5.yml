@@ -1,0 +1,47 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 13
+        location:
+          column: 31
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 25
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 3
+        location:
+          column: 31
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 26
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 10
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+          line: 16
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T11:42:03Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c: d8ee33f278cd93a3b1e0d551730c6407889b70e338ebc3c857541220d9b0f75f
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: ff54d177-a439-4b8b-a149-10aa8d8ddc8a

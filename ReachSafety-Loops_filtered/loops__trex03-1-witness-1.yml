@@ -1,0 +1,80 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 42
+          file_name: ../../sv-benchmarks/c/loops/trex03-1.c
+          line: 17
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 1
+        location:
+          column: 71
+          file_name: ../../sv-benchmarks/c/loops/trex03-1.c
+          line: 17
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 100
+          file_name: ../../sv-benchmarks/c/loops/trex03-1.c
+          line: 17
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 35
+          file_name: ../../sv-benchmarks/c/loops/trex03-1.c
+          line: 19
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 64
+          file_name: ../../sv-benchmarks/c/loops/trex03-1.c
+          line: 19
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loops/trex03-1.c
+          line: 7
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T20:23:02Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/trex03-1.c: 29c557834e203d12f97e62cb37bc9610a1f74548790633adace18ef2039a6c0b
+      input_files:
+      - ../../sv-benchmarks/c/loops/trex03-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 3a85b222-39be-420a-88d3-dfd17b90dc8a

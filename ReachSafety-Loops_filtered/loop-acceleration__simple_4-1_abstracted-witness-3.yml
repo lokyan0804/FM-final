@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: /home/cwd/sv-benchmarks/c/loop-acceleration/simple_4-1_abstracted.c
+          line: 17
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T14:35:17Z'
+    format_version: '2.0'
+    producer:
+      name: symbiotic
+      version: 10.0.0-rc1
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/loop-acceleration/simple_4-1_abstracted.c: 40fb7d2cef7329fe7553b968956583902b01a5683aac352e94115998d52b1172
+      input_files:
+      - /home/cwd/sv-benchmarks/c/loop-acceleration/simple_4-1_abstracted.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 08bd2916-6607-4320-9c52-83d99ec9ab34

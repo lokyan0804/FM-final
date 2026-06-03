@@ -1,0 +1,36 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "8a89f75c-a7f4-4815-8627-03547c64b673"
+    creation_time: "2025-12-31T16:19:06+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound10.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound10.c": "26517bdd67184dea6352cf50b6d9992d41ecfd853675bfc685354b90b7b5bf40"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound10.c"
+                   line: 23
+                   column: 32
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 65535"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/nla-digbench-scaling/dijkstra-u_unwindbound10.c"
+                   line: 14
+                   column: 10
+               type: "target"

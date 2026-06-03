@@ -1,0 +1,36 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "8c935280-2454-49e1-b288-43d0787a62e4"
+    creation_time: "2025-12-31T13:42:04+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/loops/linear_search.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/loops/linear_search.c": "5daf86ff8189a9471a20a947a9c78ff63bc56ed2dde2c379166a5ef7ff47fae4"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/linear_search.c"
+                   line: 25
+                   column: 32
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 188"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/loops/linear_search.c"
+                   line: 8
+                   column: 13
+               type: "target"

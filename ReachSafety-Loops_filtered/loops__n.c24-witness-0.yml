@@ -1,0 +1,77 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 8e8f23a1-a07c-46f0-ae03-ae4e9cae9fb0
+    creation_time: 2025-12-17T22:02:27Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/n.c24.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/n.c24.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/n.c24.i: ff2f22c8c94593047c07aca289bcba7e507bc3ee948a7529dc94c8d7792bd95d
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/n.c24.i
+          line: 153
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/n.c24.i
+          line: 155
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/n.c24.i
+          line: 195
+          column: 4
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/n.c24.i
+          line: 14
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/n.c24.i
+          line: 15
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

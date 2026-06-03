@@ -1,0 +1,47 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: '2.1'
+    creation_time: '2025-12-18T03:18:46Z'
+    producer:
+      name: witch
+      version: 4.0.0-rc1
+    uuid: 6d888460-297c-4993-a41d-dcd9aa3abbd2
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/nla-digbench-scaling/hard-u_unwindbound50.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/nla-digbench-scaling/hard-u_unwindbound50.c: 9692f5b55a240b01d2d0c222255869fb052ffe02a605ab1c8e72ef46a070f8cd
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+      data_model: ILP32
+      language: C
+  content:
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 3221749762
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/hard-u_unwindbound50.c
+          line: 26
+          column: 32
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 3042312193
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/hard-u_unwindbound50.c
+          line: 27
+          column: 32
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        location:
+          file_name: ../../sv-benchmarks/c/nla-digbench-scaling/hard-u_unwindbound50.c
+          line: 17
+          column: 10

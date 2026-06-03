@@ -1,0 +1,58 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 2
+        location:
+          column: 45
+          file_name: ../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 12
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 1
+        location:
+          column: 33
+          file_name: ../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 20
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 255
+        location:
+          column: 33
+          file_name: ../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 20
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 5
+          file_name: ../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+          line: 25
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T22:03:30Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c: 563b7b68cc9c71f6c32d6693c1b275445975396b9300286e8e67b320f2f5679b
+      input_files:
+      - ../../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 5234fbec-e45e-475f-aa73-9dfe48d10d72

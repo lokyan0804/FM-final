@@ -1,0 +1,113 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 01919b9a-1942-4592-a911-9502ea633443
+    creation_time: 2025-12-17T20:06:04Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops-crafted-1/nested5-2.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c: 5ad780effdbe313ff13ad5bc7233d50356fbf06f53a57c18cd85a4aa46126eb2
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 14
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 15
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 16
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 17
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 18
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 25
+          column: 4
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 6
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/nested5-2.c
+          line: 7
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

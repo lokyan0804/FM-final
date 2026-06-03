@@ -1,0 +1,71 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "e655c87c-9bbb-3b65-844e-ea67724f23a8"
+    creation_time: "2025-12-31T16:53:50+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--multipleLoops-kInduction"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c": "d76e796105c1d35b11eef95fec820f9bea85a1e845abd1567e15743f74522bc9"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c"
+          line: 29
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c"
+          line: 32
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c"
+          line: 35
+          column: 2
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c"
+          line: 16
+          column: 3
+          function: "__VERIFIER_assert"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c"
+          line: 17
+          column: 13
+          function: "__VERIFIER_assert"

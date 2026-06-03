@@ -1,0 +1,53 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 1a460736-e8ca-483e-a12f-81f17c3de306
+    creation_time: 2025-12-18T00:55:26Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loop-acceleration/simple_1-1.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/simple_1-1.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/simple_1-1.c: 311ca7a26a816b19bf2f80b95fa3e10e4e95b99dff1e77c10bd7566050baa8ec
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1.c
+          line: 19
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1.c
+          line: 6
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loop-acceleration/simple_1-1.c
+          line: 7
+          column: 13
+          function: __VERIFIER_assert
+        action: follow

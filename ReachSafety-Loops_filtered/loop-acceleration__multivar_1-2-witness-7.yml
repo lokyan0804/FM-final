@@ -1,0 +1,36 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 1024
+        location:
+          column: 43
+          file_name: ../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c
+          line: 14
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 13
+          file_name: ../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c
+          line: 8
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T01:21:20Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c: cba7dca6ff66778f2b0713799020489351e0894eee3f1f22efefe84bd1d673ea
+      input_files:
+      - ../../sv-benchmarks/c/loop-acceleration/multivar_1-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 997ce10c-08a6-4d0a-bc75-6c99d11b9891

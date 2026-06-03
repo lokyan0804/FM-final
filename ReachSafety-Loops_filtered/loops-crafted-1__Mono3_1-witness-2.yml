@@ -1,0 +1,25 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 58
+          file_name: ../../sv-benchmarks/c/loops-crafted-1/Mono3_1.c
+          line: 4
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-14T18:57:45Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops-crafted-1/Mono3_1.c: 0756a7f5fb7c80ee6b59c75ec6cf9015a96d2c6a2bbe84a426dbe33a7087e683
+      input_files:
+      - ../../sv-benchmarks/c/loops-crafted-1/Mono3_1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 0389b35f-d965-4cc5-9b1c-cc9db1c169e8

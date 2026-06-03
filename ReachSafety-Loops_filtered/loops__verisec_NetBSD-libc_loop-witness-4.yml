@@ -1,0 +1,137 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 73580bd1-8177-4feb-b5bb-de59c7c215c0
+    creation_time: 2025-12-17T23:13:00Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+      input_file_hashes:
+        ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i: dedd0e691082a54e7ab91bc5c89cd5119d7051d93eccccd50f69369896fe2c2c
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 42
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 44
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 46
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 31
+          column: 5
+          function: glob2
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 15
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 31
+          column: 5
+          function: glob2
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 15
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 31
+          column: 5
+          function: glob2
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 15
+          column: 3
+          function: __VERIFIER_assert
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/loops/verisec_NetBSD-libc_loop.i
+          line: 16
+          column: 13
+          function: __VERIFIER_assert
+        action: follow
