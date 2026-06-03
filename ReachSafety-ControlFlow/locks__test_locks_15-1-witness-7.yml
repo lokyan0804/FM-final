@@ -1,0 +1,226 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: '2.0'
+    uuid: fbe8dbef-600a-4150-a3f6-8c84061f58ea
+    creation_time: '2025-12-23T00:32:45+01:00'
+    producer:
+      name: Automizer
+      version: 0.3.0-merge.mb.parallel-trace-abstraction-826e9f3-m
+    task:
+      input_files:
+      - /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c: 11a9c91fdf6b42598924d9a4ae5a3db9994a05118a3b564c2bd29b9bad4177b0
+      specification: |+
+        CHECK( init(main()), LTL(G ! call(reach_error())) )
+
+      data_model: ILP32
+      language: C
+  content:
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 58
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 93
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 97
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 101
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 105
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 109
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 113
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 117
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 121
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 125
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 129
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 133
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 137
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 141
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 145
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'true'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 149
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 155
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: branching
+        action: follow
+        constraint:
+          value: 'false'
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 160
+          column: 9
+          function: main
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        location:
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_15-1.c
+          line: 233
+          column: 11
+          function: main

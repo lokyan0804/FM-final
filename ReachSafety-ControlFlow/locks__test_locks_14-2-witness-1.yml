@@ -1,0 +1,190 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: '2.1'
+    creation_time: '2025-12-17T20:22:51Z'
+    producer:
+      name: witch
+      version: 4.0.0-rc1
+    uuid: 6115c744-5fda-4f7e-ad9b-75fb19dc3cce
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/locks/test_locks_14-2.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/locks/test_locks_14-2.c: 75f53c568c86c59ddc62d2fd150ff0a5ed9b51ea17cada3ff1a95dec57d9167c
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+      data_model: ILP32
+      language: C
+  content:
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 8
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 11
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 65280
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 14
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 255
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 17
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 20
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 23
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 26
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 29
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 65280
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 32
+          column: 36
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 35
+          column: 37
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 38
+          column: 37
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 41
+          column: 37
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 44
+          column: 37
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 47
+          column: 37
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 255
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 54
+          column: 38
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        location:
+          file_name: ../../sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 219
+          column: 11

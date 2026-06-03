@@ -1,0 +1,230 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "b2bad71d-34d5-3d30-af39-b4ad23c5eb89"
+    creation_time: "2025-12-31T19:20:24+01:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.2.1"
+      configuration: "nacpa--svcomp26--configselection-restartcomponent-valueAnalysis"
+    task:
+      input_files:
+      - "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+      input_file_hashes:
+        "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c": "a1ead5ef4094d0253ba0f6c617a11ece235a4b1bb5eae8c695548dfbceeb05a3"
+      specification: "CHECK( init(main()), LTL(G ! call(reach_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9663
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9664
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9666
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9667
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "1"
+          format: "c_expression"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9669
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9678
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9702
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 3870
+          column: 3
+          function: "PptDispatchCreate"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 10407
+          column: 3
+          function: "IofCompleteRequest"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9793
+          column: 3
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9801
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9809
+          column: 7
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9812
+          column: 9
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9815
+          column: 11
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9816
+          column: 13
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9817
+          column: 15
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "false"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9829
+          column: 13
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 9838
+          column: 15
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c"
+          line: 2401
+          column: 11
+          function: "errorFn"

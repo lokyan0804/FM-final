@@ -1,0 +1,91 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 44
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 9662
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 48
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 9663
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 4
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 9665
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 255
+        location:
+          column: 42
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 9666
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 29
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 9668
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 10990
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 11
+          file_name: ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+          line: 2401
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T05:58:51Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c: a1ead5ef4094d0253ba0f6c617a11ece235a4b1bb5eae8c695548dfbceeb05a3
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 32ef7593-e2ef-430c-acd2-949c79c6df57

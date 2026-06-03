@@ -1,0 +1,256 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 48
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2391
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 3
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2393
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 42
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2394
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 52
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2404
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 52
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2405
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 52
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2406
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 52
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2407
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 52
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2408
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 52
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2409
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 83
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2415
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 83
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2416
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 83
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2417
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 79
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2419
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 79
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2420
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 79
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2421
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 36
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 1698
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2803
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 2703
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 2
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 3054
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 35
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 3222
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 3235
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 11
+          file_name: ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+          line: 1656
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T02:57:14Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c: 791fd4c1f54f973c646b3f11f7eb2f654eca269cacf7e504443ee0d13fbe9694
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: f66b065f-7fc9-440f-a724-1f72f628542a

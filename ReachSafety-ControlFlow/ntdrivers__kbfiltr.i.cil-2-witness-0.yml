@@ -1,0 +1,256 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "616b2466-e33d-43a7-bf96-24ee6353912e"
+    creation_time: "2025-12-31T13:47:07+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c": "791fd4c1f54f973c646b3f11f7eb2f654eca269cacf7e504443ee0d13fbe9694"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2391
+                   column: 48
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == -2147483648"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2393
+                   column: 46
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 3"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2394
+                   column: 42
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2404
+                   column: 52
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2405
+                   column: 52
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2406
+                   column: 52
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2407
+                   column: 52
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2408
+                   column: 52
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2409
+                   column: 52
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2415
+                   column: 83
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2416
+                   column: 83
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2417
+                   column: 83
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2419
+                   column: 79
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2420
+                   column: 79
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2421
+                   column: 79
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 1698
+                   column: 36
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 12"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2803
+                   column: 46
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 2703
+                   column: 46
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 3054
+                   column: 46
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 2"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 3222
+                   column: 35
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 3235
+                   column: 46
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c"
+                   line: 1656
+                   column: 11
+               type: "target"

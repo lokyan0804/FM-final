@@ -1,0 +1,461 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: a1370779-29cf-41e0-a2ef-dc2848a8a310
+    creation_time: 2025-12-17T23:03:29Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c: ab726a473f6c04dd764d313dbb24ea777126388718edbc0b40477fad14a8692b
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3215
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3216
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3218
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3219
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3221
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3222
+          column: 4
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3223
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3224
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3226
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3227
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3231
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3232
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2055
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2056
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2057
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2058
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2059
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2060
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2061
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2062
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2063
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2064
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2065
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2066
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2067
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2068
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2069
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3234
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3322
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3330
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3338
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3341
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3344
+          column: 11
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3358
+          column: 13
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3367
+          column: 15
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3369
+          column: 17
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2031
+          column: 11
+          function: errorFn
+        action: follow

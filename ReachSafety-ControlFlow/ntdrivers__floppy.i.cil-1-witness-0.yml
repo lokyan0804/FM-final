@@ -1,0 +1,69 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 48
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7020
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 46
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7022
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 42
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7023
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 62
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7028
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 11
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2089
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T04:53:44Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c: 986945cc1d8674c803a19893f7d2aec71de46e5693e78eba56c7bdad24c6e341
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 80d84f0b-8911-40fc-9c1a-07ef7f336571

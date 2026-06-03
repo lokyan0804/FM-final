@@ -1,0 +1,1109 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: 14dd3b15-7c86-4fbb-940b-98fa5a02c977
+    creation_time: 2025-12-18T00:23:21Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c: 986945cc1d8674c803a19893f7d2aec71de46e5693e78eba56c7bdad24c6e341
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7020
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7022
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7023
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7025
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7026
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7028
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7029
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7031
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7035
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7036
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7037
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2112
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2113
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2114
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2115
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2116
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2117
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2118
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2119
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2120
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2121
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2122
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2123
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2124
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2125
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2126
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7038
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2137
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2141
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2142
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2143
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2144
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2145
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2146
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2147
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2148
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2149
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2150
+          column: 4
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2151
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7221
+          column: 3
+          function: ExAllocatePoolWithTag
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7222
+          column: 3
+          function: ExAllocatePoolWithTag
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7224
+          column: 3
+          function: ExAllocatePoolWithTag
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2152
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2154
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2160
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2161
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2165
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2166
+          column: 5
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2170
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2171
+          column: 5
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2175
+          column: 3
+          function: DriverEntry
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7040
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7041
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7042
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7043
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7044
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7045
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7046
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7047
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7048
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7049
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7050
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7057
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7006
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7007
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7008
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7009
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7010
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7011
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7012
+          column: 3
+          function: stub_driver_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7059
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7064
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7067
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7089
+          column: 17
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2665
+          column: 3
+          function: FloppyCreateClose
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2666
+          column: 3
+          function: FloppyCreateClose
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2667
+          column: 3
+          function: FloppyCreateClose
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2668
+          column: 3
+          function: FloppyCreateClose
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7729
+          column: 3
+          function: IofCompleteRequest
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7730
+          column: 5
+          function: IofCompleteRequest
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2670
+          column: 3
+          function: FloppyCreateClose
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7118
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7128
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7136
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7144
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7147
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7150
+          column: 11
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7164
+          column: 13
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7171
+          column: 15
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 7173
+          column: 17
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
+          line: 2089
+          column: 11
+          function: errorFn
+        action: follow

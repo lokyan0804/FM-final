@@ -1,0 +1,80 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 44
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3215
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 48
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3216
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 50
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3218
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 42
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3219
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: ext_c_expression
+          value: \result == 0
+        location:
+          column: 48
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 3223
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        location:
+          column: 11
+          file_name: ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+          line: 2031
+        type: target
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-15T11:51:00Z'
+    format_version: '2.1'
+    producer:
+      name: symbiotic
+      version: 11.0.0
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c: ab726a473f6c04dd764d313dbb24ea777126388718edbc0b40477fad14a8692b
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+    uuid: 2c4b49fb-c2c8-4dfe-abdf-7951044d4f7b

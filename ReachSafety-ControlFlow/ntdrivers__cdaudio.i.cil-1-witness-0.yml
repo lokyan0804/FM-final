@@ -1,0 +1,473 @@
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.0"
+    uuid: c2bc20c9-ca73-4420-87cd-aa32e495045b
+    creation_time: 2025-12-17T21:44:37Z
+    producer:
+      name: Goblint
+      version: tags/gobitch-svcomp26-0-gee4733d52
+      command_line: '''./goblint'' ''--conf'' ''conf/svcomp26.json'' ''--sets'' ''ana.specification''
+        ''../../sv-benchmarks/c/properties/unreach-call.prp'' ''--sets'' ''exp.architecture''
+        ''32bit'' ''../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c'''
+    task:
+      input_files:
+      - ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+      input_file_hashes:
+        ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c: ad0884018313fc350052496ea1071e31a8b2c3997d36767afc87946a21697816
+      data_model: ILP32
+      language: C
+      specification: CHECK( init(main()), LTL(G ! call(reach_error())) )
+  content:
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7556
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7558
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7559
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7560
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7562
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7563
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7565
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7566
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7570
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7571
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7573
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7578
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7579
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2872
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2873
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2874
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2875
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2876
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2877
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2878
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2879
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2880
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2881
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2882
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2883
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2884
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2885
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2886
+          column: 3
+          function: _BLAST_init
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7581
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7651
+          column: 3
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7659
+          column: 5
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7667
+          column: 7
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7670
+          column: 9
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7673
+          column: 11
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7687
+          column: 13
+          function: main
+        action: follow
+        constraint:
+          value: "false"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: branching
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7696
+          column: 15
+          function: main
+        action: follow
+        constraint:
+          value: "true"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: assumption
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 7698
+          column: 17
+          function: main
+        action: follow
+        constraint:
+          value: "1"
+          format: c_expression
+  - segment:
+    - waypoint:
+        type: target
+        location:
+          file_name: ../../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
+          line: 2847
+          column: 11
+          function: errorFn
+        action: follow

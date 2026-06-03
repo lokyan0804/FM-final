@@ -1,0 +1,80 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.1"
+    uuid: "8f5bea4b-a3c0-44b9-ac11-eb779c8b16e8"
+    creation_time: "2025-12-31T17:39:48+01:00"
+    producer:
+      name: "test-to-witness (original producer: KLEEF 3.1)"
+      version: "0.1"
+    task:
+      input_files:
+      - "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+      input_file_hashes:
+        "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c": "ab726a473f6c04dd764d313dbb24ea777126388718edbc0b40477fad14a8692b"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+                   line: 3215
+                   column: 44
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+                   line: 3216
+                   column: 48
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == -2147483648"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+                   line: 3218
+                   column: 50
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+                   line: 3219
+                   column: 42
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+                   line: 3223
+                   column: 48
+               type: "function_return"
+               constraint:
+                   format: "acsl_expression"
+                   value: "\\result == 0"
+    - segment:
+        - waypoint:
+               action: "follow"
+               location:
+                   file_name: "../../../../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c"
+                   line: 2031
+                   column: 11
+               type: "target"

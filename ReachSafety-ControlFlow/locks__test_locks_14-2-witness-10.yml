@@ -1,0 +1,192 @@
+- content:
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == 0
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 8
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 11
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == 0
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 14
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 17
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 20
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 23
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 26
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == 0
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 29
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 36
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 32
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 37
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 35
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == 0
+        location:
+          column: 37
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 38
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == 0
+        location:
+          column: 37
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 41
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 37
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 44
+        type: function_return
+  - segment:
+    - waypoint:
+        action: follow
+        constraint:
+          format: acsl_expression
+          value: \result == 1
+        location:
+          column: 37
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 47
+        type: function_return
+  - segment:
+    - waypoint:
+        action: cycle
+        constraint:
+          value: 'true'
+        location:
+          column: 5
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 53
+        type: branching
+  - segment:
+    - waypoint:
+        action: cycle
+        constraint:
+          format: acsl_expression
+          value: \result == -1
+        location:
+          column: 38
+          file_name: /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+          line: 54
+        type: function_return
+  entry_type: violation_sequence
+  metadata:
+    creation_time: '2025-12-16T00:42:50+01:00'
+    format_version: '2.1'
+    producer:
+      name: CPV
+      version: '1.0'
+    task:
+      data_model: ILP32
+      input_file_hashes:
+        /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c: 75f53c568c86c59ddc62d2fd150ff0a5ed9b51ea17cada3ff1a95dec57d9167c
+      input_files:
+      - /home/cwd/sv-benchmarks/c/locks/test_locks_14-2.c
+      language: C
+      specification: CHECK( init(main()), LTL(F end) )
+    uuid: ad7492ed-8c4d-4182-ada7-384957844c85
