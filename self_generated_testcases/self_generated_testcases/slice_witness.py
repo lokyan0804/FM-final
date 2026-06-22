@@ -1942,12 +1942,17 @@ def cfa_edges_to_json(edges: list[CFAEdge], metadata: dict[str, object] | None =
     return data
 
 
+def write_text_with_parent(output_path: Path, text: str) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(text, encoding="utf-8")
+
+
 def write_sliced_cfa_json(sliced_cfa: SlicedCFA, output_path: Path) -> None:
-    output_path.write_text(json.dumps(sliced_cfa_to_json(sliced_cfa), indent=2), encoding="utf-8")
+    write_text_with_parent(output_path, json.dumps(sliced_cfa_to_json(sliced_cfa), indent=2))
 
 
 def write_edges_cfa_json(edges: list[CFAEdge], output_path: Path, metadata: dict[str, object] | None = None) -> None:
-    output_path.write_text(json.dumps(cfa_edges_to_json(edges, metadata), indent=2), encoding="utf-8")
+    write_text_with_parent(output_path, json.dumps(cfa_edges_to_json(edges, metadata), indent=2))
 
 
 def is_structural_c_line(line: str) -> bool:
@@ -2072,7 +2077,7 @@ def required_structural_lines(lines: list[str], kept_lines: set[int]) -> dict[in
 def write_sliced_c(c_path: Path, sliced_cfa: SlicedCFA, output_path: Path) -> None:
     lines = c_path.read_text(encoding="utf-8").splitlines()
     kept_by_line = required_structural_lines(lines, sliced_cfa.kept_lines)
-    output_path.write_text("\n".join(kept_by_line[lineno] for lineno in sorted(kept_by_line)) + "\n", encoding="utf-8")
+    write_text_with_parent(output_path, "\n".join(kept_by_line[lineno] for lineno in sorted(kept_by_line)) + "\n")
 
 
 def cleanup_segments(segments: list[WaypointSegment]) -> list[WaypointSegment]:
@@ -2155,7 +2160,7 @@ def reduce_witness_by_suspicious_edges(
         if new_segment is not None:
             reduced.append(new_segment)
     reduced = cleanup_segments(reduced)
-    output_path.write_text("".join(prefix + [line for seg in reduced for line in seg.lines]), encoding="utf-8")
+    write_text_with_parent(output_path, "".join(prefix + [line for seg in reduced for line in seg.lines]))
     return reduced
 
 
@@ -2420,7 +2425,7 @@ def write_smt_report(
         lines.append(f"- `{mode}`: {result['waypoints']} waypoints -> `{result['output']}`")
     lines.append("")
 
-    output_path.write_text("\n".join(lines), encoding="utf-8")
+    write_text_with_parent(output_path, "\n".join(lines))
 
 
 def compute_sliced_cfa(c_path: Path, witness_path: Path) -> tuple[CFA, SlicedCFA, list[str], list[WaypointSegment]]:
@@ -2447,7 +2452,7 @@ def write_sliced_witness(
         if keep_segment_for_sliced_cfa(segment, original_cfa, sliced_cfa)
     ]
     kept = cleanup_segments(kept)
-    output_path.write_text("".join(prefix + [line for seg in kept for line in seg.lines]), encoding="utf-8")
+    write_text_with_parent(output_path, "".join(prefix + [line for seg in kept for line in seg.lines]))
     return kept
 
 
@@ -2467,7 +2472,7 @@ def slice_witness_smt(c_path: Path, witness_path: Path, output_path: Path) -> tu
     smt_result = smt_branch_prune(c_path, segments)
     kept = [segment for segment in segments if keep_segment_smt(segment, smt_result)]
     kept = cleanup_segments(kept)
-    output_path.write_text("".join(prefix + [line for seg in kept for line in seg.lines]), encoding="utf-8")
+    write_text_with_parent(output_path, "".join(prefix + [line for seg in kept for line in seg.lines]))
     return (
         len(segments),
         len(kept),
@@ -2529,10 +2534,10 @@ def run_sliced_then_smt(
             },
         )
     if suspicious_edges_path:
-        suspicious_edges_path.write_text(
-            json.dumps(localization_debug_json(localization, suspicious_edges, reduction_results), indent=2),
-            encoding="utf-8",
-        )
+            write_text_with_parent(
+                suspicious_edges_path,
+                json.dumps(localization_debug_json(localization, suspicious_edges, reduction_results), indent=2),
+            )
     if smt_report_path:
         write_smt_report(localization, suspicious_edges, reduction_results, smt_report_path)
     stats = {
@@ -2549,7 +2554,7 @@ def run_sliced_then_smt(
         "unknown_edges": len(localization.unknown_edges),
     }
     if stats_path:
-        stats_path.write_text(json.dumps(stats, indent=2), encoding="utf-8")
+        write_text_with_parent(stats_path, json.dumps(stats, indent=2))
     return stats
 
 
@@ -2561,7 +2566,7 @@ def write_cfa_dot(cfa: CFA, output_path: Path) -> None:
         label = edge.text.replace("\\", "\\\\").replace('"', '\\"')
         lines.append(f'  n{edge.source} -> n{edge.target} [label="{edge.line}: {label}"];\n')
     lines.append("}\n")
-    output_path.write_text("".join(lines), encoding="utf-8")
+    write_text_with_parent(output_path, "".join(lines))
 
 
 def main() -> int:
